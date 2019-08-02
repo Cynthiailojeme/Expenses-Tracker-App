@@ -1,18 +1,34 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <newcategory/>
+    <car/>
+    <sport/>
+    <food/>
+    <homeexpenses/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import newcategory from '@/components/newcategory.vue';
+import car from '@/components/car.vue';
+import sport from '@/components/sport.vue';
+import food from '@/components/food.vue';
+import homeexpenses from '@/components/homeexpenses.vue';
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
-  }
+    newcategory,
+    car,
+    sport,
+    food,
+    homeexpenses
+    }
 }
 </script>
+<style>
+.home {
+    color: #ffffff;
+    margin-top: 150px;
+}
+</style>

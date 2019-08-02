@@ -1,31 +1,39 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <!--phone screen-->
+		<div id="phoneScreen">
+    <total/>
     <router-view/>
+    </div>
   </div>
 </template>
 
+<script>
+import total from '@/components/total.vue';
+
+export default {
+  name: 'App',
+  components: {
+    total
+  }
+}
+</script>
+
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  body{
+  background: #000000;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
 }
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+#phoneScreen {
+	width: 320px;
+	min-width: 320px;
+	height: 620px;
+	min-height: 620px;
+  background-color: #3C3C3C;
+	color: #ffffff;
+	margin: 0 auto;
+	border: 10px solid #585858;
+	border-radius: 30px;
 }
 </style>
