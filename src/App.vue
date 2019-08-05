@@ -2,19 +2,15 @@
   <div id="app">
     <!--phone screen-->
 		<div id="phoneScreen">
-    <total/>
     <router-view/>
     </div>
   </div>
 </template>
 
 <script>
-import total from '@/components/total.vue';
-
 export default {
   name: 'App',
   components: {
-    total
   }
 }
 </script>

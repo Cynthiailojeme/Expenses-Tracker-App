@@ -1,9 +1,9 @@
 <template>
     <div>
-        <router-link :to="{name: 'fooditems'}" class="name">
+        <!-- <router-link :to="{name: 'fooditems'}" class="name"> -->
         <p>Food</p>
-        </router-link>
-        <p class="amount">-$250
+        <!-- </router-link> -->
+        <p class="amount">
             <router-link :to="{name: 'fooditemsform'}">
             <img src="../assets/plusicon.jpg"></router-link>
             </p>

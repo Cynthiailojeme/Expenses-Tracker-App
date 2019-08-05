@@ -52,11 +52,6 @@ export default new Router({
       path: '/homeitemsform',
       name: 'homeitemsform',
       component: () => import(/* webpackChunkName: "homeitemsform" */ './views/homeitemsform.vue')
-    },
-    {
-      path: '/addcategoryform',
-      name: 'addcategoryform',
-      component: () => import(/* webpackChunkName: "addcategoryform" */ './views/addcategoryform.vue')
     }
   ]
 })

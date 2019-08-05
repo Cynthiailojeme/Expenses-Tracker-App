@@ -17,16 +17,36 @@
         </div>
 
         <div class="total">
-            <p class="toggle">Budget 
-            <i class="fa fa-toggle-down" style="font-size:20px"></i><br>$10,000</p>
-            <p class="none">Balance<br>$6,000</p>
+            <p class="toggle">Total</p>
+            <p class="none">$ {{ total }}</p>
+
         </div>
 </div>
 </template>
 
+<script>
+// import router from '../router.js';
+// export default {
+//     name: 'total',
+//     props: ["item"],
+//     components: {
+
+//     },
+//     created() {
+//     this.total = this.$route.params.total;
+//     },
+//     data () {
+//     return {
+//     total: this.total
+//     }
+// }
+// }
+// </script>
+
+
 <style scoped>
 nav {
-    display: inline;
+    align-content: center;
 }
 .time {
     float: left;
@@ -70,10 +90,10 @@ nav {
     margin: 10px;
     width: 290px;
     max-width: 290px;
-    height: 60px;
+    height: 40px;
     font-size: 16px;
     background: #4E4E4E;
-    border-radius: 40px;
+    border-radius: 30px;
     box-shadow: 0px 1px  #4E4E4E;
     display: inline-block;
     color: #ffffff;

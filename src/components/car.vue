@@ -1,9 +1,9 @@
 <template>
     <div>
-        <router-link :to="{name: 'caritems'}" class="name">
+        <!-- <router-link :to="{name: 'caritems'}" class="name"> -->
         <p>Car</p>
-        </router-link>
-        <p class="amount">-$1,000
+        <!-- </router-link> -->
+        <p class="amount">
             <router-link :to="{name: 'caritemsform'}">
             <img src="../assets/plusicon.jpg"></router-link>
         </p>

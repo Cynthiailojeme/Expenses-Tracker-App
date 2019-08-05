@@ -3,13 +3,19 @@
         <table style="width:100%">
                 <tr>
                     <th style="float:left; margin-left: 20px;">Car</th>
-                    <th style="right:10px;">-$1000</th>
+                    <!-- <td style="float:left; margin-left: 20px;">{{ expense }}</td>
+                    <td style="right:10px;"></td> -->
+                </tr>
+                <!-- <tr v-for="(item, key) in items" :key="key">
+                    <td>{{ item.expense }}</td>
+                    <td>{{ item.price }}</td>
+                </tr> -->
+
+                <tr>
+                    <td>{{ expense }}</td>
+                    <td>{{ price }}</td>
                 </tr>
                 <!-- <tr>
-                    <td>Pumping<br>22-07-19</td>
-                    <td>$100</td>
-                </tr>
-                <tr>
                     <td>Fuel<br>22-07-19</td>
                     <td>$200</td>
                 </tr>
@@ -36,6 +42,28 @@
             </table>
     </div>
 </template>
+
+<script>
+import router from '../router.js';
+export default {
+    name: 'caritems',
+    props: ["item"],
+    components: {
+
+    },
+    created() {
+    this.expense = this.$route.params.expense;
+    this.price = this.$route.params.price;
+     },
+    data () {
+    return {
+    expense: this.expense,
+    price: this.price
+    }
+}
+}
+</script>
+
 
 <style scoped>
 div{

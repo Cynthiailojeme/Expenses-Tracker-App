@@ -1,15 +1,17 @@
 <template>
   <div class="home">
-    <newcategory/>
-    <car/>
+    <total/>
+    <div class="other">
+      <car/>
     <sport/>
     <food/>
     <homeexpenses/>
+    </div>
   </div>
 </template>
 
 <script>
-import newcategory from '@/components/newcategory.vue';
+import total from '@/components/total.vue';
 import car from '@/components/car.vue';
 import sport from '@/components/sport.vue';
 import food from '@/components/food.vue';
@@ -18,7 +20,7 @@ import homeexpenses from '@/components/homeexpenses.vue';
 export default {
   name: 'home',
   components: {
-    newcategory,
+     total,
     car,
     sport,
     food,
@@ -29,6 +31,8 @@ export default {
 <style>
 .home {
     color: #ffffff;
-    margin-top: 150px;
+}
+.other {
+  margin-top: 200px;
 }
 </style>
